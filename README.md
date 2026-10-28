@@ -1,4 +1,5 @@
 # pelican-cloud
+More information about the project and related repositories can be found here: [pelican-documentation](https://github.com/TourmalineCore/pelican-documentation).
 
 ## Getting Started
 > Additional information about Yandex Cloud Terraform provider and Yandex Cloud resources can be found in documentation

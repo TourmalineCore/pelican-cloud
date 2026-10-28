@@ -13,14 +13,14 @@ resource "yandex_iam_service_account" "backups_bucket_service_account" {
 }
 
 // Grant storage.editor perms for backups_bucket_service_account to be able to put backups
-resource "yandex_storage_bucket_iam_binding" "backups_bucket_backups_bucket_service_account_iam_binding" {
-  bucket = yandex_storage_bucket.backups_bucket.bucket
-  role = "storage.editor"
-
-  members = [
-    format("serviceAccount:%s", yandex_iam_service_account.backups_bucket_service_account.id)
-  ]
-}
+// resource "yandex_storage_bucket_iam_binding" "backups_bucket_backups_bucket_service_account_iam_binding" {
+//   bucket = yandex_storage_bucket.backups_bucket.bucket
+//   role = "storage.editor"
+// 
+//   members = [
+//     format("serviceAccount:%s", yandex_iam_service_account.backups_bucket_service_account.id)
+//   ]
+// }
 
 // Configure security policy for backups bucket
 resource "yandex_storage_bucket_policy" "backups_bucket_security_policy" {

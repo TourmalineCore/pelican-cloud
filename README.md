@@ -98,8 +98,8 @@ terraform validate
 
 ### Configuring terraform variables
 
-1. Copy terraform.tfvars.example to a new file terraform.tfvars (it is in .gitignore)
-2. Change <TO_BE_MODIFIED!!!> in terraform.tfvars to your values
+1. Copy `terraform.tfvars.example` to a new file `terraform.tfvars` (it is in .gitignore)
+2. Change <TO_BE_MODIFIED!!!> in `terraform.tfvars` to your values
 
 > How to find Cloud ID
 > 1. Open [Yandex Cloud Center](https://center.yandex.cloud/)
@@ -110,4 +110,8 @@ terraform validate
 > 2. Select your folder from the list on the left.
 > 3. Folder Id located near to the folder name.
 
-3. Rename terraform.tfvars.example to terraform.tfvars
+To apply terraform configuration execute the following command:
+```bash
+terraform apply
+```
+Note: to apply configuration automatically use `--auto-approve` flag

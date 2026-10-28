@@ -36,7 +36,7 @@ environment: prod
 1. Open [Yandex Cloud Console](https://console.yandex.cloud)
 2. Navigate to "Identity and Access Management" service using the search (ALT + S)
 3. Click "Create service account" button
-4. Specify the service account name `pelican-prod-terraform-service-account` and add `storage.admin`, `iam.editor`, `compute.editor`, `resource-manager.admin`, `vpc.publicAdmin`, `vpc.privateAdmin`, `vpc.securityGroups.admin` roles
+4. Specify the service account name `pelican-prod-terraform-service-account` and add `storage.admin`, `iam.editor`, `certificate-manager.editor`, `cdn.editor`, `compute.editor`, `resource-manager.admin`, `vpc.publicAdmin`, `vpc.privateAdmin`, `vpc.securityGroups.admin` roles
 5. Specify labels:
 project: pelican
 environment: prod
